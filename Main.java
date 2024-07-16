@@ -29,7 +29,7 @@ public class Main {
                 option = sc.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a number.");
-                sc.next(); // Clear invalid input
+                sc.next(); 
                 continue;
             }
             sc.nextLine();
@@ -49,7 +49,7 @@ public class Main {
                         roll_no = sc.nextInt();
                     } catch (InputMismatchException e) {
                         System.out.println("Invalid roll number. Please enter a valid integer.");
-                        sc.next();  // Consume invalid input
+                        sc.next();  
                         break;
                     }
                     sc.nextLine();
@@ -71,7 +71,7 @@ public class Main {
                         roll_no = sc.nextInt();
                     } catch (InputMismatchException e) {
                         System.out.println("Invalid roll number. Please enter a valid integer.");
-                        sc.next();  // Consume invalid input
+                        sc.next();  
                         break;
                     }
                     if (sms.removeStudent(roll_no)) {
@@ -79,7 +79,7 @@ public class Main {
                     } else {
                         System.out.println("Student not found.");
                     }
-                    sc.nextLine();  // Consume newline
+                    sc.nextLine();  
                     break;
 
                 case 3:
@@ -88,7 +88,7 @@ public class Main {
                         roll_no = sc.nextInt();
                     } catch (InputMismatchException e) {
                         System.out.println("Invalid roll number. Please enter a valid integer.");
-                        sc.next();  // Consume invalid input
+                        sc.next();  
                         break;
                     }
                     Student student = sms.searchStudent(roll_no);
@@ -97,7 +97,7 @@ public class Main {
                     } else {
                         System.out.println("Student not found.");
                     }
-                    sc.nextLine();  // Consume newline
+                    sc.nextLine();  
                     break;
 
                 case 4:
